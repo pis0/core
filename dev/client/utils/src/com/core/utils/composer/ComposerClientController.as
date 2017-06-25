@@ -42,7 +42,8 @@ package com.core.utils.composer
         
         public function ioErrorHandler(e:IOErrorEvent):void
         {
-            Utils.print("ioErrorHandler: " + e.text);
+//            Utils.print("ioErrorHandler: " + e.text);
+            Utils.print("composer: no server to connect");
             channel.socket.close();
         }
         

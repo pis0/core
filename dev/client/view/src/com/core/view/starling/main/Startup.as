@@ -64,7 +64,8 @@ package com.core.view.starling.main
         
         final public function start(stage:Stage, callback:Function = null):void
         {
-            if (started) {
+            if (started)
+            {
                 Utils.print(new Error("STARTUP::ALREADYSTARTED"));
                 return;
             }
@@ -90,7 +91,8 @@ package com.core.view.starling.main
             
             Utils.print("initStarling");
             
-            try {
+            try
+            {
                 StarlingSprite.spriteCallback = starlingCallback;
                 
                 starling = new Starling(StarlingSprite, Statics.STAGE, initialRect); //, stage3DProxy.stage3D, Context3DRenderMode.AUTO, stage3DProxy.profile);
@@ -100,8 +102,8 @@ package com.core.view.starling.main
                 
                 initiateStarling(starling);
                 
-            }
-            catch (e:Error) {
+            } catch (e:Error)
+            {
                 Utils.print(e);
             }
             
@@ -169,7 +171,6 @@ package com.core.view.starling.main
             throw new AbstractMethodError();
         }
         
-        
         //away3d ///////////////////////////////////////////////////////////////////////////////////////////////
 
 //        // Stage manager and proxy instances
@@ -193,7 +194,6 @@ package com.core.view.starling.main
 //
 //        }
 
-
 //        private function away3DOnContextCreated(event:Stage3DEvent):void
 //        {
 //            Utils.print("away3DOnContextCreated");
@@ -204,13 +204,11 @@ package com.core.view.starling.main
 //            stage3DProxy.addEventListener(flash.events.Event.ENTER_FRAME, away3DOnRender, false, 0, true);
 //        }
 
-
 //        private function initAway3D():void
 //        {
 //            Utils.print("initAway3D");
 //            initEngine();
 //        }
-
 
 //        protected var away3dView:View3D;
 //        protected var away3dScene:Scene3D;
@@ -243,7 +241,6 @@ package com.core.view.starling.main
 //            Away3D.currentView = away3dView;
 //        }
 
-
 //        private function away3DOnRender(e:flash.events.Event):void
 //        {
 //            if (!starling || (starling.context && starling.context.driverInfo == "Disposed")) return;
@@ -253,7 +250,6 @@ package com.core.view.starling.main
 //                if (away3dScene.numChildren) away3dView.render();
 //            }
 //        }
-    
     
     }
 }
