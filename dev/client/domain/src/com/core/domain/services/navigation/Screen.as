@@ -31,12 +31,10 @@ package com.core.domain.services.navigation
         {
             if (screenController)
             {
-                
                 Utils.print("dispose: " + this);
                 
                 screenController.dispose();
                 screenController = null;
-                
             }
             
         }
@@ -59,7 +57,7 @@ package com.core.domain.services.navigation
         
         public function get controller():ScreenController
         {
-            if (!screenController) throw new Error("screenController is null");
+//            if (!screenController) throw new Error("screenController is null");
             return screenController;
         }
         
