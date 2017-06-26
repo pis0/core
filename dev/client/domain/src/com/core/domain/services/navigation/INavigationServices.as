@@ -5,5 +5,9 @@ package com.core.domain.services.navigation
         
         function initiate():void;
         
+        function get state():uint;
+        
+        function set state(value:uint):void;
+        
     }
 }

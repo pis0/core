@@ -122,7 +122,7 @@ package com.core.view.starling.main
         protected function get initialRect():Rectangle
         {
 //            return new Rectangle(0, 0, 768, 1024);
-            return new Rectangle(0, 0, 800, 600);
+            return new Rectangle(0, 0, 960, 640);
         }
         
         protected function initiateStarling(starling:Starling):void
